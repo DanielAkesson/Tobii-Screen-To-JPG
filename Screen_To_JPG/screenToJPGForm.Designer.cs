@@ -36,11 +36,11 @@
             this._contextActions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.takeSnapshotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openImageDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._prefix = new System.Windows.Forms.TextBox();
             this._choosePathDir = new System.Windows.Forms.FolderBrowserDialog();
             this._openFileDir = new System.Windows.Forms.Button();
-            this.openImageDirectoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._contextActions.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,6 +88,12 @@
             resources.ApplyResources(this.openWindowToolStripMenuItem, "openWindowToolStripMenuItem");
             this.openWindowToolStripMenuItem.Click += new System.EventHandler(this.openWindowToolStripMenuItem_Click);
             // 
+            // openImageDirectoryToolStripMenuItem
+            // 
+            this.openImageDirectoryToolStripMenuItem.Name = "openImageDirectoryToolStripMenuItem";
+            resources.ApplyResources(this.openImageDirectoryToolStripMenuItem, "openImageDirectoryToolStripMenuItem");
+            this.openImageDirectoryToolStripMenuItem.Click += new System.EventHandler(this.openImageDirectoryToolStripMenuItem_Click);
+            // 
             // quitToolStripMenuItem
             // 
             this.quitToolStripMenuItem.Name = "quitToolStripMenuItem";
@@ -111,12 +117,6 @@
             this._openFileDir.Name = "_openFileDir";
             this._openFileDir.UseVisualStyleBackColor = false;
             this._openFileDir.Click += new System.EventHandler(this._openFileDir_Click);
-            // 
-            // openImageDirectoryToolStripMenuItem
-            // 
-            this.openImageDirectoryToolStripMenuItem.Name = "openImageDirectoryToolStripMenuItem";
-            resources.ApplyResources(this.openImageDirectoryToolStripMenuItem, "openImageDirectoryToolStripMenuItem");
-            this.openImageDirectoryToolStripMenuItem.Click += new System.EventHandler(this.openImageDirectoryToolStripMenuItem_Click);
             // 
             // screenToJPGForm
             // 
