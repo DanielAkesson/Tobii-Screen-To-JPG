@@ -1,0 +1,10 @@
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\bin\Release\Screen_To_JPG.exe.config
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\bin\Release\Screen_To_JPG.exe
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\bin\Release\Screen_To_JPG.pdb
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.csprojAssemblyReference.cache
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.screenToJPGForm.resources
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.Properties.Resources.resources
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.csproj.GenerateResource.cache
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.csproj.CoreCompileInputs.cache
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.exe
+C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Release\Screen_To_JPG.pdb
