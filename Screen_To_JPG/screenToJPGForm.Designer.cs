@@ -41,6 +41,7 @@
             this._prefix = new System.Windows.Forms.TextBox();
             this._choosePathDir = new System.Windows.Forms.FolderBrowserDialog();
             this._openFileDir = new System.Windows.Forms.Button();
+            this.comboScale = new System.Windows.Forms.ComboBox();
             this._contextActions.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@
             // 
             // _contextActions
             // 
+            this._contextActions.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._contextActions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.takeSnapshotToolStripMenuItem,
             this.openWindowToolStripMenuItem,
@@ -118,18 +120,35 @@
             this._openFileDir.UseVisualStyleBackColor = false;
             this._openFileDir.Click += new System.EventHandler(this._openFileDir_Click);
             // 
+            // comboScale
+            // 
+            this.comboScale.DisplayMember = "0";
+            this.comboScale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboScale.Items.AddRange(new object[] {
+            resources.GetString("comboScale.Items"),
+            resources.GetString("comboScale.Items1"),
+            resources.GetString("comboScale.Items2"),
+            resources.GetString("comboScale.Items3")});
+            resources.ApplyResources(this.comboScale, "comboScale");
+            this.comboScale.Name = "comboScale";
+            this.comboScale.ValueMember = "0";
+            this.comboScale.SelectedValueChanged += new System.EventHandler(this.ComboScale_SelectedValueChanged);
+            // 
             // screenToJPGForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboScale);
             this.Controls.Add(this._openFileDir);
             this.Controls.Add(this._prefix);
             this.Controls.Add(this._takeSnapBut);
             this.Controls.Add(this._choosePathBut);
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "screenToJPGForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.screenToJPGForm_FormClosing);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.ScreenToJPGForm_KeyPress);
             this._contextActions.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,6 +167,7 @@
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.Button _openFileDir;
         private System.Windows.Forms.ToolStripMenuItem openImageDirectoryToolStripMenuItem;
+        private System.Windows.Forms.ComboBox comboScale;
     }
 }
 

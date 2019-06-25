@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;_choosePathBut.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="_takeSnapBut.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;_takeSnapBut.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <metadata name="notifyIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
@@ -185,6 +185,30 @@
   <metadata name="_contextActions.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>238, 17</value>
   </metadata>
+  <data name="takeSnapshotToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="takeSnapshotToolStripMenuItem.Text" xml:space="preserve">
+    <value>Take Snapshot</value>
+  </data>
+  <data name="openWindowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="openWindowToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open Window</value>
+  </data>
+  <data name="openImageDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="openImageDirectoryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open Image Directory</value>
+  </data>
+  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 22</value>
+  </data>
+  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
+    <value>Quit</value>
+  </data>
   <data name="_contextActions.Size" type="System.Drawing.Size, System.Drawing">
     <value>191, 92</value>
   </data>
@@ -2451,30 +2475,6 @@
   <data name="notifyIcon.Text" xml:space="preserve">
     <value>Screen To JPG</value>
   </data>
-  <data name="takeSnapshotToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="takeSnapshotToolStripMenuItem.Text" xml:space="preserve">
-    <value>Take Snapshot</value>
-  </data>
-  <data name="openWindowToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="openWindowToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open Window</value>
-  </data>
-  <data name="openImageDirectoryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="openImageDirectoryToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open Image Directory</value>
-  </data>
-  <data name="quitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 22</value>
-  </data>
-  <data name="quitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Quit</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="_prefix.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -2501,7 +2501,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;_prefix.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <metadata name="_choosePathDir.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>4, 20</value>
@@ -2537,6 +2537,42 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;_openFileDir.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="comboScale.Items" xml:space="preserve">
+    <value>100% scale</value>
+  </data>
+  <data name="comboScale.Items1" xml:space="preserve">
+    <value>125% scale</value>
+  </data>
+  <data name="comboScale.Items2" xml:space="preserve">
+    <value>150% scale</value>
+  </data>
+  <data name="comboScale.Items3" xml:space="preserve">
+    <value>175% scale</value>
+  </data>
+  <data name="comboScale.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 41</value>
+  </data>
+  <data name="comboScale.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="comboScale.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 21</value>
+  </data>
+  <data name="comboScale.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboScale.Name" xml:space="preserve">
+    <value>comboScale</value>
+  </data>
+  <data name="&gt;&gt;comboScale.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboScale.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboScale.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -2546,7 +2582,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>384, 111</value>
+    <value>382, 66</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4803,7 +4839,7 @@
 </value>
   </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>400, 150</value>
+    <value>399, 149</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Screen To JPG</value>

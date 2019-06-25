@@ -8,3 +8,13 @@ C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Debug\Scre
 C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.csproj.CoreCompileInputs.cache
 C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.exe
 C:\Users\Daniel Åkesson\source\repos\Screen_To_JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.pdb
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\bin\Debug\Screen_To_JPG.exe.config
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\bin\Debug\Screen_To_JPG.exe
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\bin\Debug\Screen_To_JPG.pdb
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.csprojAssemblyReference.cache
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.screenToJPGForm.resources
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.Properties.Resources.resources
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.csproj.GenerateResource.cache
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.csproj.CoreCompileInputs.cache
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.exe
+C:\Users\da3419\Desktop\Tobii-Screen-To-JPG\Screen_To_JPG\obj\Debug\Screen_To_JPG.pdb

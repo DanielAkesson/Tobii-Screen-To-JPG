@@ -1,28 +1,33 @@
 ﻿using System;
-using System.Runtime.InteropServices;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Threading;
+using System.Windows.Input;
 
 namespace Screen_To_JPG
 {
     public partial class screenToJPGForm : Form
     {
         private int suffixNumber = 0;
+        private float scale = 1f;
+        private GlobalHotkey snapHotkey;
         public screenToJPGForm()
         {
             InitializeComponent();
             _choosePathDir.SelectedPath = Directory.GetCurrentDirectory();
+            snapHotkey = new GlobalHotkey(Constants.ALT, Keys.S, this);
+            snapHotkey.Register();
         }
-       
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == Constants.WM_HOTKEY_MSG_ID)
+                TakeSnapshot();
+            base.WndProc(ref m);
+        }
+
         //Functions
         private void TakeSnapshot()
         {
@@ -35,7 +40,7 @@ namespace Screen_To_JPG
         }
         private Bitmap CaptureWindow()
         {
-            Bitmap bitmap = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Bitmap bitmap = new Bitmap((int)(Screen.PrimaryScreen.Bounds.Width * scale), (int)(Screen.PrimaryScreen.Bounds.Height * scale));
             Graphics graphics = Graphics.FromImage(bitmap as Image);
             graphics.CopyFromScreen(0, 0, 0, 0, bitmap.Size);
             return bitmap;
@@ -62,7 +67,7 @@ namespace Screen_To_JPG
         {
             Hide();
             notifyIcon.Visible = false;
-            Thread.Sleep(150);
+            Thread.Sleep(200);
             TakeSnapshot();
             Show();
             notifyIcon.Visible = true;
@@ -70,6 +75,15 @@ namespace Screen_To_JPG
         private void _openFileDir_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start(_choosePathDir.SelectedPath);
+        }
+        private void ScreenToJPGForm_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 's')
+                TakeSnapshot();
+        }
+        private void ComboScale_SelectedValueChanged(object sender, EventArgs e)
+        {
+            scale = 1f + ((float)comboScale.SelectedIndex / 4f);
         }
         //Context menu actions
         private void takeSnapshotToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,7 +108,7 @@ namespace Screen_To_JPG
             notifyIcon.Visible = false;
             notifyIcon.Dispose();
             Close();
-            Application.Exit();
+            snapHotkey.Unregiser();
             System.Environment.Exit(1);
         }
     }
